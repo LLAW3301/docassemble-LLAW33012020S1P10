@@ -1,1 +1,148 @@
---
+---
+mandatory: True
+question: Welcome to The Royal Society for the Blind - NDIS Service Agreement Application
+subquestion: |
+  Disclaimer: This application will request information from you and   automatically fill in a NDIS Service Agreement. The completed application will then be automastically emailed to The Royal Society for the Blind, and allow you to download a PDF copy. Should you disagree with any of the terms or have any questions, this application will refer you to the contact page of The Royal Society of the Blind so that you can make contact with a Case Manager.
+
+  To get started, press **Continue**.
+  To contact us, press **exit**
+buttons:
+  - Continue: continue
+  - Exit and Contact Us: exit
+    url: https://rsb.org.au/contact-us
+---
+mandatory: True
+question: This NDIS Service Agreement is for
+subquestion: |
+  Note: A Participant in the National Disability Insurance Scheme
+fields:
+  - no label: P10Name
+---
+mandatory: True
+question: Please enter the Participants Representative / Parent / Guardian
+subquestion: |
+  Note: A Participant’s Representative is someone close to the Participant, such   as a family member or friend or someone who manages the funding for Services     under the Customer’s NDIS Plan. This person is also referred to as the ‘Plan     Nominee’ under the National Disability Insurance Scheme Act 2013.
+fields:
+  - no label: P10Representative
+---
+mandatory: True
+question: Please enter the Case Managers Name
+fields:
+  - no label: P10CaseManager
+---
+mandatory: True
+question: This NDIS Service Agreement will commence on
+subquestion: |
+ 
+fields:
+  - no label: P10Date
+    datatype: date
+---
+mandatory: True
+question: And will remain in place, until cancelled by the Participant, their   Representative or the RSB, following an agreed review of such.
+
+buttons:
+  - Accept: continue
+  - Refuse and contact us: exit
+    url: https://rsb.org.au/contact-us
+---
+mandatory: True
+question: SCHEDULE OF SERVICES
+subquestion: |
+  The Services and their prices are set out in the RSB Service Bookings document which is developed following a request for service. All prices are GST inclusive (if applicable).
+
+  Transport / Travel, Report Writing, Equipment Hire (charged at an agreed rate) are components of Hours of Service claimed.
+
+  Please note the prices for Services provided do not include miscellaneous associated costs and fees such as entrance fees, event tickets, meals/drinks etc. and other exclusions set out under the NDIS Price Guide.
+buttons:
+  - Accept: continue
+  - Refuse and contact us: exit
+    url: https://rsb.org.au/contact-us
+---
+mandatory: True
+question: RESPONSIBILITIES of RSB
+subquestion: |
+  The RSB agrees to:
+  
+  *Consult the Participant on decisions about how services are provided;
+  
+  *Provide Services that that are aligned with the NDIS Plan and at the Participant’s preferred times (wherever possible);
+  
+  *Review the provision of services, including service quality, and if appropriate, to track the Participant’s progress against their goals;
+  
+  *To be respectful of the individual, their family and their home;
+  
+  *Communicate openly and honestly, in a timely manner;
+  
+  *Listen to feedback;
+  
+  *Protect the Participant’s privacy and confidentiality;
+  
+  *Implement cancellations in a manner consistent with the current NDIS Price Guide appropriate for South Australia;
+  
+  *Provide information about the Complaints and Feedback Policy;
+  
+  *Provide services in a manner consistent with relevant laws, including the National Disability Insurance Scheme Act 2013 and Australian Consumer Law;
+  
+  *Keep accurate records of services provided to the Participant;
+  
+  *Provide information in an accessible format and to assist with understanding information if required;
+  
+  *Give a minimum of 24 hours’ notice, where possible, if the RSB has to change a scheduled appointment (except in emergency situations);
+  
+  *Give the Participant 20 working days’ notice if the RSB needs to end the NDIS Service Agreement;
+  
+  *Issue regular invoices and statements of support delivered to the Participant as per the NDIA Terms of Business for Registered Providers.
+buttons:
+  - Accept: continue
+  - Refuse and Contact Us: exit
+    url: https://rsb.org.au/contact-us
+---
+mandatory: True
+question: RESPONSIBILITIES of PARTICIPANT
+subquestion: |
+  The Participant agrees to:
+  
+  *Inform the RSB how they wish the services to be delivered to meet their       needs;
+  
+  *Treat employees, consultants and volunteers of the RSB with courtesy and       respect;
+  
+  *Acknowledge that needs may change and to negotiate modifications of care and   service if required;
+  
+  *Talk to the RSB if they have any concerns about the services being provided;
+  
+  *Provide the RSB a minimum of 24 hours’ notice if they cannot make a   scheduled appointment, within reasonable circumstances. If the notice is not   provided by then, the RSB’s Cancellation Policy may apply;
+  
+  *Provide the RSB with 20 business days’ notice if they need to end the NDIS Service Agreement;
+  
+  *Allow safe and reasonable access for RSB employees, consultants and volunteers at the times agreed;
+  
+  *Inform the RSB of any changes to their NDIS Plan or funding shortfalls for agreed provision of services;
+  
+  *Notify the RSB if the NDIS Plan is suspended or replaced by a New Plan or if the Participant stops participating in the NDIS.
+buttons:
+  - Accept: continue
+  - Refuse and Contact Us: exit
+    url: https://rsb.org.au/contact-us
+---
+mandatory: True
+question: PAYMENTS
+subquestion: |
+  The RSB will seek payment for the provision of services, after the services have been delivered.
+
+  All payments will be as per the current NDIS Price Guide issued by the National Disability Insurance Agency on the first of July each year or as and when, NDIS price changes are published. NDIS Payment terms are 14 days on the provision of invoice.
+
+  RSB will provide invoices and statements to the appropriate party in accordance with the chosen funds management. It may be one or more of the following:
+
+    *If the Participant has chosen to self-manage their funding for NDIS Services provided under the NDIS Service Agreement, the RSB will send the Participant an invoice for the Participant to pay as per the terms;
+
+    *If the Participant’s Plan Nominee self-manages the funding for services provided under this Service Agreement, the RSB will send the Participant’s Plan Nominee an invoice for the Plan Nominee to pay, as per the terms;
+
+    *If the Participant has nominated the NDIA to manage the funding for services provided under this NDIS Service Agreement, the RSB will claim payment from the NDIA via their online portal;
+
+    *If the Participant has nominated a Registered Plan Management Provider to manage the funding for services in the Service Agreement, the RSB will claim payment from the Registered Plan Management Provider.
+buttons:
+  - Accept: continue
+  - Refuse and Contact Us: exit
+    url: https://rsb.org.au/contact-us
+---
