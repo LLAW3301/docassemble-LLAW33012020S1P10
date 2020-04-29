@@ -13,10 +13,9 @@ buttons:
 ---
 mandatory: True
 question: This NDIS Service Agreement is for
-subquestion: |
-  Note: A Participant in the National Disability Insurance Scheme
 fields:
-  - no label: P10Name
+  - Full Name: P10Name
+  - note: A Participant in the National Disability Insurance Scheme
 ---
 mandatory: True
 question: Please enter the Participants Representative / Parent / Guardian
