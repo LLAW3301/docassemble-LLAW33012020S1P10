@@ -1,0 +1,96 @@
+---
+Mandatory: True
+question: Please select a payment method
+fields:
+  - no label: P10payment_method
+    datatype: checkboxes
+    choices:
+      -   Self-manage
+      -   Nominee self-manages
+      -   NDIA will manage 
+      -   Registered Plan Management Provider
+    none of the above: False
+---
+mandatory: True
+question: When will this be paid by?
+subquestion: |
+ 
+fields:
+  - no label: P10Payment_date
+    datatype: date
+  - note: Payment will need to be within 7 days of the payment date.
+---
+mandatory: True
+question: CHANGES TO THIS SERVICE AGREEMENT
+subquestion: |
+  If changes to the services or their delivery are required, the parties agree to discuss and review the Service Bookings document. The parties agree that any changes to the Service Agreement will be in writing, signed and dated by the parties.
+buttons:
+  - Accept: continue
+  - Refuse and Contact Us: exit
+    url: https://rsb.org.au/contact-us
+---
+mandatory: True
+Question: REFUSAL TO SIGN THE SERVICE AGREEMENT
+subquestion: | 
+ Should the Participant state they do not wish to sign this NDIS Service Agreement, the RSB reserves the right to decline provision of services from that time.
+buttons:
+  - Accept: continue
+  - Refuse and Contact Us: exit
+    url: https://rsb.org.au/contact-us
+---
+mandatory: True
+Question: FEEDBACK/COMPLAINTS 
+subquestion: | 
+ The RSB is committed to resolving complaints fairly, equitably and as quickly as possible as per the Complaints and Feedback Policy.
+
+ If a Customer is dissatisfied with the support being delivered, then the RSB will listen and try to resolve the complaint. The complaint can be face to face, by phone, fax, letter or email and will be treated with equal importance. 
+
+ The RSB will provide any Services necessary to assist the complainant with making the complaint.
+
+ The complaint will remain confidential and information will only be available to those who are involved in resolving the complaint. Complainants will not be disadvantaged or lose support items as a result of making a complaint.
+
+buttons:
+  - Accept: continue
+  - Refuse and Contact Us: exit
+    url: https://rsb.org.au/contact-us
+---
+mandatory: True
+Question: THE COMPLAINANT MAY AT ANY POINT IN THE PORCESS CONTACT
+subquestion: | 
+
+ * A Coordinator or Service Manager – in the first instance
+ 
+ * The Executive Manager – if the complaint is about the Coordinator,        their handling of your complaint or more broadly about RSB’s Services
+ 
+ * The Executive Director – if the complaint is about the Executive          Manager, their handling of your complaint or more broadly about the      RSB 
+ 
+ * The Board of Directors – if the complaint is about the Executive          Director, their handling of your complaint
+ 
+ * Or go directly to an external agency
+ 
+ If you are not satisfied with the response you have received or the outcome of your complaint you can contact:
+ 
+ The NDIS Commission by:
+
+ * Phoning: 1800 035 544 (free call from landlines) or TTY 133 677          (Interpreters can be arranged)
+ 
+ * National Relay Service and ask for 1800 035 544.
+ 
+ * Completing a complaint contact form at www.ndiscommission.gov.au
+
+buttons:
+  - Accept: continue
+  - Refuse and Contact Us: exit
+    url: https://rsb.org.au/contact-us
+---
+mandatory: True
+Question: CUSTOMER INCIDENTS
+subquestion: | 
+ Any incident or injury experienced as a result of RSB services or products should be reported to your support coordinator / case manager for follow up. RSB will investigate and report incidents as per the NDIS Commission Quality and Safeguards Framework.
+
+ **While a Customer's right for choice and control in decision-making is to be respected, if an RSB staff member believes the Customer is a risk to themselves or others they have a Duty of Care to contact Emergency Services.**
+buttons:
+  - Accept: continue
+  - Refuse and Contact Us: exit
+    url: https://rsb.org.au/contact-us
+---
