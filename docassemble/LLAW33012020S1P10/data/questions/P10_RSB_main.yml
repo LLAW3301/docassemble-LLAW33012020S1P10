@@ -1,0 +1,26 @@
+# The main program that controls the execution
+---
+include:
+  - P10_RSB2_Gall0166.yml
+---
+mandatory: True
+question: Welcome to The Royal Society for the Blind - NDIS Service Agreement Application
+subquestion: |
+  Disclaimer: This application will request information from you and   automatically fill in a NDIS Service Agreement. The completed application will then be automastically emailed to The Royal Society for the Blind, and allow you to download a PDF copy. Should you disagree with any of the terms or have any questions, this application will refer you to the contact page of The Royal Society of the Blind so that you can make contact with a Case Manager.
+
+  To get started, press **Continue**.
+  To contact us, press **exit**
+buttons:
+  - Continue: continue
+  - Exit and Contact Us: exit
+    url: https://rsb.org.au/contact-us
+---
+# This code block controls the execution of the program
+mandatory: True
+code: |
+  P10Name
+  P10Representative
+  P10Date
+  if not P10ScheduleOfServices or not P10Responsibilities:
+    exit_endpoint 
+---
