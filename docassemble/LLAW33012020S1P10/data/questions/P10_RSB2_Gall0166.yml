@@ -68,7 +68,7 @@ subquestion: |
   *Issue regular invoices and statements of support delivered to the Participant as per the NDIA Terms of Business for Registered Providers.
   
   Do you accept
-yesno: P10Responsibilities
+yesno: P10ResponsibilitiesOfRSB
 ---
 question: RESPONSIBILITIES of PARTICIPANT
 subquestion: |
@@ -91,10 +91,9 @@ subquestion: |
   *Inform the RSB of any changes to their NDIS Plan or funding shortfalls for agreed provision of services;
   
   *Notify the RSB if the NDIS Plan is suspended or replaced by a New Plan or if the Participant stops participating in the NDIS.
-buttons:
-  - Accept: continue
-  - Refuse and Contact Us: exit
-    url: https://rsb.org.au/contact-us
+  
+  Do you accept
+yesno: P10ResponsibilitiesOfParticipant
 ---
 question: PAYMENTS
 subquestion: |
@@ -111,13 +110,13 @@ subquestion: |
     *If the Participant has nominated the NDIA to manage the funding for services provided under this NDIS Service Agreement, the RSB will claim payment from the NDIA via their online portal;
 
     *If the Participant has nominated a Registered Plan Management Provider to manage the funding for services in the Service Agreement, the RSB will claim payment from the Registered Plan Management Provider.
-buttons:
-  - Accept: continue
-  - Refuse and Contact Us: exit
-    url: https://rsb.org.au/contact-us
+  
+  Do you accept
+yesno: P10Payments
 ---
 event: exit_endpoint
 question: You do not accept
 buttons:
   - Exit: exit
+    url: https://rsb.org.au/contact-us
 ---

@@ -1,5 +1,4 @@
 ---
-Mandatory: True
 question: Please select a payment method
 fields:
   - no label: P10payment_method
@@ -11,7 +10,6 @@ fields:
       -   Registered Plan Management Provider
     none of the above: False
 ---
-mandatory: True
 question: When will this be paid by?
 subquestion: |
  
@@ -20,25 +18,19 @@ fields:
     datatype: date
   - note: Payment will need to be within 7 days of the payment date.
 ---
-mandatory: True
 question: CHANGES TO THIS SERVICE AGREEMENT
 subquestion: |
   If changes to the services or their delivery are required, the parties agree to discuss and review the Service Bookings document. The parties agree that any changes to the Service Agreement will be in writing, signed and dated by the parties.
-buttons:
-  - Accept: continue
-  - Refuse and Contact Us: exit
-    url: https://rsb.org.au/contact-us
+  
+  Do you accept?
+yesno: P10Changes
 ---
-mandatory: True
 Question: REFUSAL TO SIGN THE SERVICE AGREEMENT
 subquestion: | 
  Should the Participant state they do not wish to sign this NDIS Service Agreement, the RSB reserves the right to decline provision of services from that time.
-buttons:
-  - Accept: continue
-  - Refuse and Contact Us: exit
-    url: https://rsb.org.au/contact-us
+  Do you accept?
+yesno: P10RefusalToSign
 ---
-mandatory: True
 Question: FEEDBACK/COMPLAINTS 
 subquestion: | 
  The RSB is committed to resolving complaints fairly, equitably and as quickly as possible as per the Complaints and Feedback Policy.
@@ -49,12 +41,9 @@ subquestion: |
 
  The complaint will remain confidential and information will only be available to those who are involved in resolving the complaint. Complainants will not be disadvantaged or lose support items as a result of making a complaint.
 
-buttons:
-  - Accept: continue
-  - Refuse and Contact Us: exit
-    url: https://rsb.org.au/contact-us
+  Do you accept?
+yesno: P10Feedback
 ---
-mandatory: True
 Question: THE COMPLAINANT MAY AT ANY POINT IN THE PORCESS CONTACT
 subquestion: | 
 
@@ -78,19 +67,19 @@ subquestion: |
  
  * Completing a complaint contact form at www.ndiscommission.gov.au
 
-buttons:
-  - Accept: continue
-  - Refuse and Contact Us: exit
-    url: https://rsb.org.au/contact-us
+  Do you accept?
+yesno: P10Contact
 ---
-mandatory: True
 Question: CUSTOMER INCIDENTS
 subquestion: | 
  Any incident or injury experienced as a result of RSB services or products should be reported to your support coordinator / case manager for follow up. RSB will investigate and report incidents as per the NDIS Commission Quality and Safeguards Framework.
 
  **While a Customer's right for choice and control in decision-making is to be respected, if an RSB staff member believes the Customer is a risk to themselves or others they have a Duty of Care to contact Emergency Services.**
-buttons:
-  - Accept: continue
-  - Refuse and Contact Us: exit
-    url: https://rsb.org.au/contact-us
+  Do you accept?
+yesno: P10Incidents
 ---
+event: exit_endpoint
+question: You do not accept
+buttons:
+  - Exit: exit
+    url: https://rsb.org.au/contact-us

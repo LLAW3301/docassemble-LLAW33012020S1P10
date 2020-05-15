@@ -2,6 +2,7 @@
 ---
 include:
   - P10_RSB2_Gall0166.yml
+  - P10_RSB_Section2.yml
 ---
 mandatory: True
 question: Welcome to The Royal Society for the Blind - NDIS Service Agreement Application
@@ -20,7 +21,12 @@ mandatory: True
 code: |
   P10Name
   P10Representative
+  P10CaseManager
   P10Date
-  if not P10ScheduleOfServices or not P10Responsibilities:
-    exit_endpoint 
+  if not P10ScheduleOfServices or not P10ResponsibilitiesOfRSB or not     P10ResponsibilitiesOfParticipant or not P10Payments:
+    exit_endpoint
+  P10payment_method
+  P10Payment_date
+  if not P10Changes or not P10RefusalToSign or not P10Feedback or not P10Contact or not P10Incidents:
+    exit_endpoint
 ---
