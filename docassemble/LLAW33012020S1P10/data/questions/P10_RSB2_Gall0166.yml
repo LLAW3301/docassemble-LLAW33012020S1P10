@@ -1,51 +1,27 @@
----
-mandatory: True
-question: Welcome to The Royal Society for the Blind - NDIS Service Agreement Application
-subquestion: |
-  Disclaimer: This application will request information from you and   automatically fill in a NDIS Service Agreement. The completed application will then be automastically emailed to The Royal Society for the Blind, and allow you to download a PDF copy. Should you disagree with any of the terms or have any questions, this application will refer you to the contact page of The Royal Society of the Blind so that you can make contact with a Case Manager.
-
-  To get started, press **Continue**.
-  To contact us, press **exit**
-buttons:
-  - Continue: continue
-  - Exit and Contact Us: exit
-    url: https://rsb.org.au/contact-us
----
-mandatory: True
 question: This NDIS Service Agreement is for
 fields:
   - Full Name: P10Name
   - note: A Participant in the National Disability Insurance Scheme
 ---
-mandatory: True
 question: Please enter the Participants Representative / Parent / Guardian
 subquestion: |
   Note: A Participant’s Representative is someone close to the Participant, such   as a family member or friend or someone who manages the funding for Services     under the Customer’s NDIS Plan. This person is also referred to as the ‘Plan     Nominee’ under the National Disability Insurance Scheme Act 2013.
 fields:
   - no label: P10Representative
 ---
-mandatory: True
 question: Please enter the Case Managers Name
 fields:
   - no label: P10CaseManager
 ---
-mandatory: True
 question: This NDIS Service Agreement will commence on
 subquestion: |
- 
 fields:
   - no label: P10Date
     datatype: date
+under: |
+   And will remain in place, until cancelled by the Participant, their
+   Representative or the RSB, following an agreed review of such.
 ---
-mandatory: True
-question: And will remain in place, until cancelled by the Participant, their   Representative or the RSB, following an agreed review of such.
-
-buttons:
-  - Accept: continue
-  - Refuse and contact us: exit
-    url: https://rsb.org.au/contact-us
----
-mandatory: True
 question: SCHEDULE OF SERVICES
 subquestion: |
   The Services and their prices are set out in the RSB Service Bookings document which is developed following a request for service. All prices are GST inclusive (if applicable).
@@ -53,12 +29,10 @@ subquestion: |
   Transport / Travel, Report Writing, Equipment Hire (charged at an agreed rate) are components of Hours of Service claimed.
 
   Please note the prices for Services provided do not include miscellaneous associated costs and fees such as entrance fees, event tickets, meals/drinks etc. and other exclusions set out under the NDIS Price Guide.
-buttons:
-  - Accept: continue
-  - Refuse and contact us: exit
-    url: https://rsb.org.au/contact-us
+  
+  Do you accept?
+yesno: P10ScheduleOfServices
 ---
-mandatory: True
 question: RESPONSIBILITIES of RSB
 subquestion: |
   The RSB agrees to:
@@ -92,12 +66,10 @@ subquestion: |
   *Give the Participant 20 working days’ notice if the RSB needs to end the NDIS Service Agreement;
   
   *Issue regular invoices and statements of support delivered to the Participant as per the NDIA Terms of Business for Registered Providers.
-buttons:
-  - Accept: continue
-  - Refuse and Contact Us: exit
-    url: https://rsb.org.au/contact-us
+  
+  Do you accept
+yesno: P10Responsibilities
 ---
-mandatory: True
 question: RESPONSIBILITIES of PARTICIPANT
 subquestion: |
   The Participant agrees to:
@@ -124,7 +96,6 @@ buttons:
   - Refuse and Contact Us: exit
     url: https://rsb.org.au/contact-us
 ---
-mandatory: True
 question: PAYMENTS
 subquestion: |
   The RSB will seek payment for the provision of services, after the services have been delivered.
@@ -144,4 +115,9 @@ buttons:
   - Accept: continue
   - Refuse and Contact Us: exit
     url: https://rsb.org.au/contact-us
+---
+event: exit_endpoint
+question: You do not accept
+buttons:
+  - Exit: exit
 ---
