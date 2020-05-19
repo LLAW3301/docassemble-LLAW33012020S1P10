@@ -1,0 +1,37 @@
+--- 
+#### final page of interview 
+question: |
+  Dear ${ P10_firstname + ' ' + P10_lastname },  
+subquestion: |
+  
+  Thankyou for your time, your completed and signed service aggrement will be    fowarded to your case manager.
+  
+  By clicking the PDF link below you can download a personal copy of this aggrement.  
+  
+  Feel free to contact your case manager if you have any further questions.
+
+buttons:
+  - I'm done: exit
+--- 
+code: |
+  send_email(to='leigh.galliford@flinders.edu.au', 
+      template=notification, 
+      attachments=service_agreement)
+  send_email_flag = True
+---
+template: notification
+subject: |
+  Greetings, NDIS Case maanger!
+content: |
+  This is an automated e-mail sent from an interview with a
+  client, attached you will find their signed service aggreement.
+ 
+  Have a nice day!
+--- 
+attachment:
+  variable name: service_agreement
+  docx template file: attachment.docx
+  valid formats:
+    - pdf
+---
+  
