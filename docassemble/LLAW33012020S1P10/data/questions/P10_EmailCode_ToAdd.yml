@@ -1,0 +1,32 @@
+--- 
+#### final page of interview 
+question: |
+  Dear ${ P10_firstname + ' ' + P10_lastname },  
+subquestion: |
+  
+  Thankyou for your time, your completed and signed service aggrement will be    fowarded to your case manager.
+  
+  By clicking the PDF link below you can download a personal copy of this aggrement.  
+  
+  Feel free to contact your case manager if you have any further questions.
+attachment:
+  docx template file: NDIS_RSB_Revised_Service_Agreement_21.docx 
+valid formats:
+  - PDF 
+buttons:
+  - I'm done: exit
+--- 
+code: |
+send_email: (to=INSERT EMAIL HERE, template=email_message, attachments [NDIS_RSB_Revised_Service_Agreement_21.docx])
+---
+template: notification
+subject: |
+  Greetings, NDIS Case maanger!
+content: |
+  This is an automated e-mail sent from an interview with a
+  client, attached you will find their signed service aggreement.
+ 
+  Have a nice day!
+attachment:
+  PDF file: NDIS_RSB_Revised_Service_Agreement_21.docx 
+--- 
