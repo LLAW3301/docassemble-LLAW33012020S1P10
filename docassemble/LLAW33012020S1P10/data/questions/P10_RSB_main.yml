@@ -5,8 +5,26 @@ include:
   - P10_RSB_Section2.yml
   - P10_RSB_Section3.yml
 ---
+metadata:
+  title: |
+    <span class="P10_title_style"> RSB Service Agreement Facilitator
+    </span>
+---
+features:
+  css: P10_RSB2_Smed0013.css
+---
+objects:
+  - P10Icon: DAStaticFile.using(filename='P10_RSB2_Icon.png')
+---
 mandatory: True
-question: Welcome to The Royal Society for the Blind - NDIS Service Agreement Application
+code: |
+  set_parts(logo='<img src="' + P10Icon.url_for() + '" style="height: 60px; margin-left: 10px;">')
+---
+mandatory: True
+question: |
+  <span class="P10_question_style">
+  Welcome to The Royal Society for the Blind - NDIS Service Agreement Application
+  </span>
 subquestion: |
   Disclaimer: This application will request information from you and   automatically fill in a NDIS Service Agreement. The completed application will then be automastically emailed to The Royal Society for the Blind, and allow you to download a PDF copy. Should you disagree with any of the terms or have any questions, this application will refer you to the contact page of The Royal Society of the Blind so that you can make contact with a Case Manager.
 
