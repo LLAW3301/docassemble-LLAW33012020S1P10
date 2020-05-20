@@ -8,7 +8,7 @@ fields:
   - Home Address: P10_homeaddress
 ---
 question: |
-  **ACCEPTANCE OF SERVICE AGREEMENT** 
+  **Acceptance of Service Agreement** 
 subquestion: |
   **By signing you agree to the terms and conditions of this Service Agreement.**
   Do you accept
@@ -21,13 +21,13 @@ subquestion: |
 signature: P10_signature
 --- 
 question: |
-  Please sign your full name in the box below 
+  Please enter your full name in the box below 
 subquestion: |
-  **By signing you agree to the terms and conditions of this Service Agreement.**
-signature: P10_signedname
+fields:
+  - no label: P10_signedname
 --- 
 question: |
-  Please sign the date in the box below 
+  Please enter the date
 subquestion: |
   **By signing you agree to the terms and conditions of this Service Agreement.**
 fields:
