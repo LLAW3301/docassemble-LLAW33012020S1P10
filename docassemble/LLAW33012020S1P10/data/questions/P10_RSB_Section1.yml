@@ -22,7 +22,7 @@ under: |
    And will remain in place, until cancelled by the Participant, their
    Representative or the RSB, following an agreed review of such.
 ---
-question: SCHEDULE OF SERVICES
+question: Schedule of Services
 subquestion: |
   The Services and their prices are set out in the RSB Service Bookings document which is developed following a request for service. All prices are GST inclusive (if applicable).
 
@@ -33,7 +33,7 @@ subquestion: |
   Do you accept?
 yesno: P10ScheduleOfServices
 ---
-question: RESPONSIBILITIES of RSB
+question: Responsibilites of RSB
 subquestion: |
   The RSB agrees to:
   
@@ -70,7 +70,7 @@ subquestion: |
   Do you accept
 yesno: P10ResponsibilitiesOfRSB
 ---
-question: RESPONSIBILITIES of PARTICIPANT
+question: Responsibilities of Participant
 subquestion: |
   The Participant agrees to:
   
@@ -95,7 +95,7 @@ subquestion: |
   Do you accept
 yesno: P10ResponsibilitiesOfParticipant
 ---
-question: PAYMENTS
+question: Payments
 subquestion: |
   The RSB will seek payment for the provision of services, after the services have been delivered.
 

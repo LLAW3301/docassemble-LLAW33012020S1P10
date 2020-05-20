@@ -9,15 +9,15 @@ subquestion: |
   By clicking the PDF link below you can download a personal copy of this aggrement.  
   
   Feel free to contact your case manager if you have any further questions.
-attachment:
-  docx template file: NDIS_RSB_Revised_Service_Agreement_21.docx 
-valid formats:
-  - PDF 
+
 buttons:
   - I'm done: exit
 --- 
 code: |
-send_email: (to=INSERT EMAIL HERE, template=email_message, attachments [NDIS_RSB_Revised_Service_Agreement_21.docx])
+  send_email(to='leigh.galliford@flinders.edu.au', 
+      template=notification, 
+      attachments=service_agreement)
+  send_email_flag = True
 ---
 template: notification
 subject: |
@@ -27,6 +27,11 @@ content: |
   client, attached you will find their signed service aggreement.
  
   Have a nice day!
-attachment:
-  PDF file: NDIS_RSB_Revised_Service_Agreement_21.docx 
 --- 
+attachment:
+  variable name: service_agreement
+  docx template file: attachment.docx
+  valid formats:
+    - pdf
+---
+  
