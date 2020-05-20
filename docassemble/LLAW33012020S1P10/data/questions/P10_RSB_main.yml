@@ -65,7 +65,7 @@ subquestion: |
   
   Thankyou for your time, your completed and signed service aggrement will be    fowarded to your case manager.
   
-  By entering your email below you can recieve a personal copy of this agreement via email.  
+   By clicking the PDF link below you can download a personal copy of this aggrement.  
   
   Feel free to contact your case manager if you have any further questions.
   
@@ -81,7 +81,7 @@ attachment:
 buttons:
   - I'm done: exit
 ---
-code: |
+code: |  
 send_email: (to= 'gall0166@flinders.edu.au', template=notification, attachments [Revised_Service_Agreement_with_Jinja_2.docx])
 ---
 template: notification
