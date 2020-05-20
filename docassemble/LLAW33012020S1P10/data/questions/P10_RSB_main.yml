@@ -4,6 +4,7 @@ include:
   - P10_RSB_Section1.yml
   - P10_RSB_Section2.yml
   - P10_RSB_Section3.yml
+  - P10_EmailCode_ToAdd.yml
 ---
 metadata:
   title: |

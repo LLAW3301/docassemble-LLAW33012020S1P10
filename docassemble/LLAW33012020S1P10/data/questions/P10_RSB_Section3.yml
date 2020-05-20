@@ -1,5 +1,9 @@
 ---
-question: Please provide the contact details of the Participant / Participant’s Representative below
+question: |
+  <span class="P10_question_style">
+  Please provide the contact details of the Participant / Participant’s Representative below
+  Application
+   </span> 
 subquestion: Please ensure these details are correct 
 fields:
   - Phone Number: P10_phonenumber
