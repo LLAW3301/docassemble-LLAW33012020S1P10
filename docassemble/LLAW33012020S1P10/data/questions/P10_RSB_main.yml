@@ -4,7 +4,6 @@ include:
   - P10_RSB_Section1.yml
   - P10_RSB_Section2.yml
   - P10_RSB_Section3.yml
-  - P10_EmailCode_ToAdd.yml
 ---
 metadata:
   title: |
@@ -57,8 +56,46 @@ code: |
     exit_endpoint
   P10_signature
   P10_signedname
-  P10_signeddate
+  P10_signeddate  
+--- 
+#### final page of interview 
+mandatory: True
+question: |
+subquestion: |
   
-  # Send the email
-  send_email_flag
+  Thankyou for your time, your completed and signed service aggrement will be    fowarded to your case manager.
+  
+  By entering your email below you can recieve a personal copy of this agreement via email.  
+  
+  Feel free to contact your case manager if you have any further questions.
+  
+  **RSB’s contact details:**
+  Phone number: 1300 944 306 
+  Email address: ndis@rsb.org.au
+  Business Address: 230 Pirie St, Adelaide, 5000.
+
+attachment:
+  docx template file: Revised_Service_Agreement_with_Jinja_2.docx
+  valid formats:
+  - PDF 
+buttons:
+  - I'm done: exit
 ---
+code: |
+send_email: (to= 'gall0166@flinders.edu.au', template=notification, attachments [Revised_Service_Agreement_with_Jinja_2.docx])
+---
+template: notification
+subject: |
+  Hello ${{ P10CaseManager }}
+content: |
+  This is an automated e-mail sent from an interview with a
+  client, ${{ P10Name }} Attached you will find their signed service aggreement.
+ 
+  Have a nice day!
+attachment:
+  variable name: service_agreement
+  docx template file: Revised_Service_Agreement_with_Jinja_2.docx
+  valid formats:
+    - pdf
+---
+  
