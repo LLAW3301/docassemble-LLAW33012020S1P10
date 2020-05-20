@@ -1,5 +1,8 @@
----
-question: Please select a payment method
+question: |
+  <span class="P10_question_style">
+  Please select a payment method
+  Application
+   </span> 
 fields:
   - no label: P10payment_method
     datatype: checkboxes
@@ -10,7 +13,11 @@ fields:
       -   Registered Plan Management Provider
     none of the above: False
 ---
-question: When will this be paid by?
+question: |
+  <span class="P10_question_style">
+  When will this be paid by?
+  Application
+   </span> 
 subquestion: |
  
 fields:
@@ -18,20 +25,32 @@ fields:
     datatype: date
   - note: Payment will need to be within 7 days of the payment date.
 ---
-question: Changes to this Service Agreement
+question: |
+  <span class="P10_question_style">
+  Changes to this Service Agreement
+  Application
+   </span> 
 subquestion: |
   If changes to the services or their delivery are required, the parties agree to discuss and review the Service Bookings document. The parties agree that any changes to the Service Agreement will be in writing, signed and dated by the parties.
   
   Do you accept?
 yesno: P10Changes
 ---
-Question: Refusal to sign the Service Agreement
+question: |
+  <span class="P10_question_style">
+  Refusal to sign the Service Agreement
+  Application
+   </span> 
 subquestion: | 
  Should the Participant state they do not wish to sign this NDIS Service Agreement, the RSB reserves the right to decline provision of services from that time.
   Do you accept?
 yesno: P10RefusalToSign
 ---
-Question: Feedback/Complaints
+question: |
+  <span class="P10_question_style">
+  Feedback/Complaints
+  Application
+   </span> 
 subquestion: | 
  The RSB is committed to resolving complaints fairly, equitably and as quickly as possible as per the Complaints and Feedback Policy.
 
@@ -44,7 +63,11 @@ subquestion: |
   Do you accept?
 yesno: P10Feedback
 ---
-Question: The Complainant may at any point in the process contact
+question: |
+  <span class="P10_question_style">
+  The Complainant may at any point in the process contact
+  Application
+   </span> 
 subquestion: | 
 
  * A Coordinator or Service Manager – in the first instance
@@ -70,7 +93,11 @@ subquestion: |
   Do you accept?
 yesno: P10Contact
 ---
-Question: Customer Incidents
+question: |
+  <span class="P10_question_style">
+  Customer Incidents
+  Application
+   </span> 
 subquestion: | 
  Any incident or injury experienced as a result of RSB services or products should be reported to your support coordinator / case manager for follow up. RSB will investigate and report incidents as per the NDIS Commission Quality and Safeguards Framework.
 
