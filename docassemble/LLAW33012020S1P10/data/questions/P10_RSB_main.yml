@@ -73,16 +73,20 @@ subquestion: |
   Phone number: 1300 944 306 
   Email address: ndis@rsb.org.au
   Business Address: 230 Pirie St, Adelaide, 5000.
-
 attachment:
+  name: RSB Service Agreement
+  filename: RSB_Service_Agreement
   docx template file: Revised_Service_Agreement_with_Jinja_2.docx
   valid formats:
-  - PDF 
+    - pdf
 buttons:
   - I'm done: exit
+    url: https://www.rsb.org.au/
+  - Start again from the beginning: restart
 ---
+mandatory: True
 code: |  
-send_email: (to= 'gall0166@flinders.edu.au', template=notification, attachments [Revised_Service_Agreement_with_Jinja_2.docx])
+send_email: (to=gall0166@flinders.edu.au, template=notification, attachments [Revised_Service_Agreement_with_Jinja_2.docx])
 ---
 template: notification
 subject: |
@@ -92,10 +96,10 @@ content: |
   client, ${{ P10Name }} Attached you will find their signed service aggreement.
  
   Have a nice day!
+--- 
 attachment:
   variable name: service_agreement
   docx template file: Revised_Service_Agreement_with_Jinja_2.docx
   valid formats:
     - pdf
 ---
-  
