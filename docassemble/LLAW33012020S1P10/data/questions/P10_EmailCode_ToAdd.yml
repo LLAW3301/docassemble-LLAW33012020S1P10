@@ -14,14 +14,16 @@ subquestion: |
   Email address: ndis@rsb.org.au
   Business Address: 230 Pirie St, Adelaide, 5000.
 
+attachment:
+  docx template file: Revised_Service_Agreement_with_Jinja_2.docx
+  valid formats:
+  - PDF 
 buttons:
   - I'm done: exit
---- 
+---
 code: |
-  send_email(to='ndis@rsb.org.au', 
-      template=notification, 
-      attachments=service_agreement)
-  send_email_flag = True
+send_email: (to=ndis@rsb.org.au, template=notification, attachments [Revised_Service_Agreement_with_Jinja_2.docx])
+   send_email_flag = True
 ---
 template: notification
 subject: |
@@ -34,7 +36,7 @@ content: |
 --- 
 attachment:
   variable name: service_agreement
-  docx template file: Revised_Service_Agreement_with_Jinja_1.docx
+  docx template file: Revised_Service_Agreement_with_Jinja_2.docx
   valid formats:
     - pdf
 ---
