@@ -1,19 +1,35 @@
-question: This NDIS Service Agreement is for
+question: |
+  <span class="P10_question_style">
+  This NDIS Service Agreement is for
+  Application
+   </span>
 fields:
   - Full Name: P10Name
   - note: A Participant in the National Disability Insurance Scheme
 ---
-question: Please enter the Participants Representative / Parent / Guardian
+question: |
+  <span class="P10_question_style">
+  Please enter the Participants Representative / Parent / Guardian
+  Application
+   </span>
 subquestion: |
   Note: A Participant’s Representative is someone close to the Participant, such   as a family member or friend or someone who manages the funding for Services     under the Customer’s NDIS Plan. This person is also referred to as the ‘Plan     Nominee’ under the National Disability Insurance Scheme Act 2013.
 fields:
   - no label: P10Representative
 ---
-question: Please enter the Case Managers Name
+question: |
+  <span class="P10_question_style">
+  Please enter the Case Managers Name
+  Application
+   </span>
 fields:
   - no label: P10CaseManager
 ---
-question: This NDIS Service Agreement will commence on
+question: |
+  <span class="P10_question_style">
+  This NDIS Service Agreement will commence on
+  Application
+   </span>
 subquestion: |
 fields:
   - no label: P10Date
@@ -22,7 +38,11 @@ under: |
    And will remain in place, until cancelled by the Participant, their
    Representative or the RSB, following an agreed review of such.
 ---
-question: Schedule of Services
+question: |
+  <span class="P10_question_style">
+  Schedule of Services
+  Application
+   </span>
 subquestion: |
   The Services and their prices are set out in the RSB Service Bookings document which is developed following a request for service. All prices are GST inclusive (if applicable).
 
@@ -33,7 +53,11 @@ subquestion: |
   Do you accept?
 yesno: P10ScheduleOfServices
 ---
-question: Responsibilites of RSB
+question: |
+  <span class="P10_question_style">
+  Responsibilites of RSB
+  Application
+   </span>
 subquestion: |
   The RSB agrees to:
   
@@ -70,7 +94,11 @@ subquestion: |
   Do you accept
 yesno: P10ResponsibilitiesOfRSB
 ---
-question: Responsibilities of Participant
+question: |
+  <span class="P10_question_style">
+  Responsibilities of Participant
+  Application
+   </span>
 subquestion: |
   The Participant agrees to:
   
@@ -95,7 +123,11 @@ subquestion: |
   Do you accept
 yesno: P10ResponsibilitiesOfParticipant
 ---
-question: Payments
+question: |
+  <span class="P10_question_style">
+  Payments
+  Application
+   </span>
 subquestion: |
   The RSB will seek payment for the provision of services, after the services have been delivered.
 

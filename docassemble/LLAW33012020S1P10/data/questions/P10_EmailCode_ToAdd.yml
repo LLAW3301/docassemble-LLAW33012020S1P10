@@ -1,7 +1,6 @@
 --- 
 #### final page of interview 
 question: |
-  Dear ${ P10_firstname + ' ' + P10_lastname },  
 subquestion: |
   
   Thankyou for your time, your completed and signed service aggrement will be    fowarded to your case manager.
@@ -9,28 +8,33 @@ subquestion: |
   By clicking the PDF link below you can download a personal copy of this aggrement.  
   
   Feel free to contact your case manager if you have any further questions.
+  
+  **RSB’s contact details:**
+  Phone number: 1300 944 306 
+  Email address: ndis@rsb.org.au
+  Business Address: 230 Pirie St, Adelaide, 5000.
 
 buttons:
   - I'm done: exit
 --- 
 code: |
-  send_email(to='leigh.galliford@flinders.edu.au', 
+  send_email(to='ndis@rsb.org.au', 
       template=notification, 
       attachments=service_agreement)
   send_email_flag = True
 ---
 template: notification
 subject: |
-  Greetings, NDIS Case maanger!
+  Hello ${{ P10CaseManager }}
 content: |
   This is an automated e-mail sent from an interview with a
-  client, attached you will find their signed service aggreement.
+  client, ${{ P10Name }} Attached you will find their signed service aggreement.
  
   Have a nice day!
 --- 
 attachment:
   variable name: service_agreement
-  docx template file: attachment.docx
+  docx template file: Revised_Service_Agreement_with_Jinja_1.docx
   valid formats:
     - pdf
 ---
