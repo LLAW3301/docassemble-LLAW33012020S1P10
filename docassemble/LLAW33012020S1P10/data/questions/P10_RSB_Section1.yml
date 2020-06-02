@@ -1,19 +1,49 @@
+---
 question: |
   <span class="P10_question_style">
   This NDIS Service Agreement is for:
    </span>
 fields:
   - Full Name: P10Name
-  - note: A Participant in the National Disability Insurance Scheme
+  - note: This person will be referred to as the participant in this agreement.
 ---
 question: |
   <span class="P10_question_style">
-  Please enter the Participants Representative / Parent / Guardian:
+  Are you filling out this application on behalf of someone else as their Representative?
    </span>
 subquestion: |
-  Note: A Participant’s Representative is someone close to the Participant, such   as a family member or friend or someone who manages the funding for Services     under the Customer’s NDIS Plan. This person is also referred to as the ‘Plan     Nominee’ under the National Disability Insurance Scheme Act 2013.
+  **Note:** A Participant’s Representative is someone close to the Participant, such   as a family member or friend or someone who manages the funding for Services     under the Customer’s NDIS Plan. This person is also referred to as the ‘Plan     Nominee’ under the National Disability Insurance Scheme Act 2013.
+fields:
+    - Please select one: P10_Participant_Or_Representative
+      input type: radio
+      choices:
+        - Yes
+        - No
+---
+question: |
+  <span class="P10_question_style">
+  Please enter the Participants Representative / Parent / Guardian Name:
+   </span>
 fields:
   - no label: P10Representative
+---
+question: |
+  <span class="P10_question_style">
+  Please provide your contact details below
+   </span> 
+subquestion: Please ensure these details are correct 
+fields:
+  - Phone Number: P10_phonenumber
+    datatype: integer
+    required: True
+  - Mobile Number: P10_mobilenumber
+    datatype: integer
+    required: True
+  - Email Address: P10_emailaddress
+    datatype: email
+    required: True
+  - Home Address: P10_homeaddress
+    required: True
 ---
 question: |
   <span class="P10_question_style">
@@ -31,19 +61,18 @@ fields:
   - no label: P10Date
     datatype: date
 under: |
-   And will remain in place, until cancelled by the Participant, their
-   Representative or the RSB, following an agreed review of such.
+   This NDIS Service Agreement will remain in place, until cancelled by the Participant, their Representative or the RSB, following an agreed review of such.
 ---
 question: |
   <span class="P10_question_style">
   Schedule of Services:
    </span>
 subquestion: |
-  The Services and their prices are set out in the RSB Service Bookings document which is developed following a request for service. All prices are GST inclusive (if applicable).
+  * The Services and their prices are set out in the RSB Service Bookings document which is developed following a request for service. All prices are GST inclusive (if applicable); 
   
-  Transport / Travel, Report Writing, Equipment Hire (charged at an agreed rate) are components of Hours of Service claimed.
+  * Transport / Travel, Report Writing, Equipment Hire (charged at an agreed rate) are components of Hours of Service claimed;
   
-  Please note the prices for Services provided do not include miscellaneous associated costs and fees such as entrance fees, event tickets, meals/drinks etc. and other exclusions set out under the NDIS Price Guide.
+  * Please note the prices for Services provided do not include miscellaneous associated costs and fees such as entrance fees, event tickets, meals/drinks etc. and other exclusions set out under the NDIS Price Guide.
   
   **Do you accept?**
 yesno: P10ScheduleOfServices
@@ -53,7 +82,7 @@ question: |
   Responsibilites of RSB:
    </span>
 subquestion: |
-  The RSB agrees to:
+  **The RSB agrees to:**
   
   * Consult the Participant on decisions about how services are provided;
   

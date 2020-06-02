@@ -46,7 +46,14 @@ buttons:
 mandatory: True
 code: |
   P10Name
-  P10Representative
+  P10_Participant_Or_Representative
+  if P10_Participant_Or_Representative == 'Yes':
+   P10Representative
+  else:
+    P10_phonenumber
+  P10_mobilenumber
+  P10_emailaddress
+  P10_homeaddress
   P10CaseManager
   P10Date
   if not P10ScheduleOfServices or not P10ResponsibilitiesOfRSB or not     P10ResponsibilitiesOfParticipant:
@@ -56,10 +63,6 @@ code: |
   P10Payment_date
   if not P10Changes or not P10RefusalToSign or not P10Feedback or not P10Contact or not P10Incidents:
     exit_endpoint
-  P10_phonenumber
-  P10_mobilenumber
-  P10_emailaddress
-  P10_homeaddress
   P10_signature
   P10_signedname
   P10_signeddate  
