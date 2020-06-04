@@ -35,15 +35,15 @@ subquestion: Please ensure these details are correct
 fields:
   - Phone Number: P10_phonenumber
     datatype: integer
-    required: True
+    required: False
   - Mobile Number: P10_mobilenumber
     datatype: integer
-    required: True
+    required: False
   - Email Address: P10_emailaddress
     datatype: email
-    required: True
+    required: False
   - Home Address: P10_homeaddress
-    required: True
+    required: False
 ---
 question: |
   <span class="P10_question_style">
