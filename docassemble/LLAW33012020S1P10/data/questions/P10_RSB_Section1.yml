@@ -22,7 +22,7 @@ fields:
 ---
 question: |
   <span class="P10_question_style">
-  Please enter the Participants Representative / Parent / Guardian Name:
+  Please enter the Participant's Representative / Parent / Guardian Name:
    </span>
 fields:
   - no label: P10Representative
@@ -47,7 +47,7 @@ fields:
 ---
 question: |
   <span class="P10_question_style">
-  Please enter the Case Managers Name:
+  Please enter the Case Manager's Name:
    </span>
 fields:
   - no label: P10CaseManager
