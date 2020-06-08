@@ -68,7 +68,6 @@ code: |
   else:
     P10_signedname = P10Name
   P10_signature
-  P10_signeddate 
 ---
 mandatory: True
 question: | 
@@ -81,7 +80,7 @@ subquestion: |
  
 
   % if email_status == True:
-    A copy has be emailed to your case manager, ${ P10CaseManager }.   If you would like a personal copy of the agreement please click the link below. 
+    A copy has been emailed to your case manager, ${ P10CaseManager }.   If you would like a personal copy of the agreement please click the link below. 
   % endif
   
   Feel free to contact the RSB on the details below if you have any further questions.

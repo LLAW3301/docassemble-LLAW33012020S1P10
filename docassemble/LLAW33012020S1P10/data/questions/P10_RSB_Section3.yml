@@ -13,13 +13,3 @@ subquestion: |
 fields:
   - no label: P10_signedname
 --- 
-question: |
-  <span class="P10_question_style">
-  Please enter the date:
-  </span> 
-subquestion: |
-  **By signing you agree to the terms and conditions of this Service Agreement.**
-fields:
-  - no label: P10_signeddate
-    datatype: date
----
